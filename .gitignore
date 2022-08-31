@@ -1,0 +1,17 @@
+extension.zip
+bundle.zip
+
+# nix build output symlink
+result
+
+# internal tooling hooks and inner works
+dynatrace-internal
+.envrc
+
+# dep
+secrets/*
+artifacts/*
+
+remote-activation.json
+
+local-activation.json

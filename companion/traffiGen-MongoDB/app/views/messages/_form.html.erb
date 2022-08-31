@@ -1,0 +1,44 @@
+<button onclick="autoFill()">Generate something</button>
+<%= form_with(model: message) do |form| %>
+  <% if message.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+        <% message.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title , id: "titleField" %>
+  </div>
+
+  <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.text_area :content , id: "contentField" %>
+  </div>
+
+  <div>
+    <%= form.label :author, style: "display: block" %>
+    <%= form.text_field :author, id: "authorField" %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<script type="text/javascript">
+  function autoFill() {
+    titleTab = ["Harry Potter","Lord of The Rings","The Witcher","Black Bible","Hobbit","My Little Pony","How to Invest","War","Art of War","Ulysses","Moby Dick", "The Great Gatsby", "The Stranger" ]
+    authorTab = ["John","Ben","Carl","Rick","Ana","Judith","Irene","Alise"]
+  document.getElementById("titleField").value = titleTab[Math.floor(Math.random()*titleTab.length)];
+  document.getElementById("contentField").value = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pharetra risus at felis lobortis, eget efficitur nisi tincidunt. Suspendisse eget velit at turpis tristique pharetra. Proin blandit interdum odio. Nulla suscipit vulputate mauris id scelerisque. Duis bibendum accumsan semper. Donec sagittis velit sed est fermentum rhoncus. Nulla volutpat turpis magna, eu dictum nulla lobortis a. Nulla eleifend finibus massa ut gravida. Aliquam fringilla nunc ut ex condimentum consequat. Vivamus hendrerit quis lorem et luctus. Sed hendrerit vulputate est, in molestie augue fermentum tincidunt. "
+  document.getElementById("authorField").value = authorTab[Math.floor(Math.random()*authorTab.length)];
+  document.forms[0].submit()
+}
+</script>
