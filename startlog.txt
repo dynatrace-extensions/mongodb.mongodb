@@ -1,0 +1,14 @@
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force
+# TODO: move this to default and remove
+dt extension sign --key secrets/developer.pem --force

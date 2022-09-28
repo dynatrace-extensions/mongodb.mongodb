@@ -7,7 +7,7 @@ let
   };
   pkgs = import nixpkgs { config = {}; };
   dtcli = with pkgs; stdenv.mkDerivation rec {
-    version = "1.6.3";
+    version = "1.6.7";
     name = "dtcli-${version}";
     src = fetchurl {
       url = "https://github.com/dynatrace-oss/dt-cli/releases/download/v${version}/dt";
