@@ -1,5 +1,3 @@
-.DEFAULT_GOAL := init
-
 SOURCES_DIR := src
 ENTRYPOINT := extension.yaml
 TOKEN_LOCATION := ./secrets/token
