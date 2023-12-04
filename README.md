@@ -14,6 +14,9 @@ Collective batch of data is gathered every minute by the MongoDB data exporter a
 **Compatibility Requirements**
 - Host running MongoDB server and Prometheus ‘Percona’ exporter dedicated for MongoDB monitoring. 
 
+## Install
+See [install](Install.md) for details
+
 ## Usage
 For now go for [dev](#dev)
 
